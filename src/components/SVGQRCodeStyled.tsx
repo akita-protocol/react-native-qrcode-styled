@@ -44,6 +44,7 @@ export interface SVGQRCodeStyledProps
   padding?: number;
   backgroundImage?: SVGImageProps;
   logo?: LogoOptions;
+  optimizeStyleUpdates?: boolean;
   children?: (pieceSize: number, bitMatrix: BitMatrix) => SvgProps['children'];
   renderBackground?: (pieceSize: number, bitMatrix: BitMatrix) => SvgProps['children'];
 }
@@ -73,6 +74,7 @@ function SVGQRCodeStyled(
     maskPattern,
     toSJISFunc,
     errorCorrectionLevel = 'M',
+    optimizeStyleUpdates = false,
     children,
     renderBackground,
     ...props
@@ -138,6 +140,9 @@ function SVGQRCodeStyled(
       innerEyesOptions={transformedInnerEyesOptions}
       renderCustomPieceItem={renderCustomPieceItem}
       logoArea={hidePieces ? logoArea : undefined}
+      optimizeStyleUpdates={optimizeStyleUpdates}
+      color={color}
+      gradient={gradient}
     />
   );
 

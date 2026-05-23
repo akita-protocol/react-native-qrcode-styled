@@ -70,6 +70,7 @@ version                    | undefined       | number                 |[Descript
 maskPattern                | undefined       | number                 |[Description](https://github.com/soldair/node-qrcode#maskpattern)
 toSJISFunc                 | undefined       | function               |[Description](https://github.com/soldair/node-qrcode#tosjisfunc)
 errorCorrectionLevel       | 'M'            | 'L' \| 'M' \| 'Q' \| 'H' |[Description](https://github.com/soldair/node-qrcode#errorCorrectionLevel)
+optimizeStyleUpdates       | false          | boolean                | If *true*, renders QR body pieces as one cached path and finder eyes separately when compatible. Improves frequent style updates. Falls back to the default renderer for custom pieces, liquid/glued pieces, per-piece rotation, and non-numeric piece scale.
 renderCustomPieceItem      | undefined       | [RenderCustomPieceItem](#RenderCustomPieceItem) | Render custom piece of QR code. It must return svg component. If it defined, previous piece and eyes configurations won't be work
 renderBackground           | undefined       | (pieceSize: number, bitMatrix: number[][]) => SvgProps['children'] | Ability to add any additional svg components behind qr code
 children                   | undefined       | (pieceSize: number, bitMatrix: number[][]) => SvgProps['children'] | Ability to add any additional svg components as children
