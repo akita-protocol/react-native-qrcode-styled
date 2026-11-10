@@ -1,5 +1,5 @@
 {
-  "name": "react-native-qrcode-styled",
+  "name": "@akita-protocol/react-native-qrcode-styled",
   "version": "0.4.0",
   "description": "A fully customizable QR Code generator for React Native based on react-native-svg and javascript-qrcode.",
   "main": "./lib/module/index.js",
@@ -53,7 +53,10 @@
     "qr-generator",
     "rn-qr-generator"
   ],
-  "repository": "https://github.com/tokkozhin/react-native-qrcode-styled",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akita-protocol/react-native-qrcode-styled.git"
+  },
   "author": "Daniel Tokkozhin <dan.t.a@mail.ru> (https://github.com/tokkozhin)",
   "license": "MIT",
   "bugs": {
@@ -61,7 +64,8 @@
   },
   "homepage": "https://github.com/tokkozhin/react-native-qrcode-styled#readme",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19.6.0",

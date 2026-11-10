@@ -2,7 +2,8 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "react-native-qrcode-styled": ["./src/index"]
+      "react-native-qrcode-styled": ["./src/index"],
+      "@akita-protocol/react-native-qrcode-styled": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
